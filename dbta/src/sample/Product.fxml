@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="insert" prefHeight="420.0" prefWidth="559.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ProductController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+        <TableView fx:id="tableProduct" layoutX="220.0" layoutY="14.0" prefHeight="289.0" prefWidth="315.0">
+            <columns>
+                <TableColumn fx:id="product_id" prefWidth="38.333343505859375" text="Id" />
+                <TableColumn fx:id="product_name" prefWidth="120.66668701171875" text="Name" />
+                <TableColumn fx:id="product_quantity" prefWidth="60.0" text="Quantity" />
+                <TableColumn fx:id="product_price" prefWidth="100.0" text="Price" />
+            </columns>
+        </TableView>
+        <Button fx:id="btn_generate" layoutX="100.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="100.0" text="Refresh" />
+        <Button fx:id="insertData" layoutX="100.0" layoutY="210.0" mnemonicParsing="false" onAction="#insertData" prefHeight="25.0" prefWidth="100.0" text="Insert">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Button>
+        <Button fx:id="deleteData" layoutX="100.0" layoutY="270.0" mnemonicParsing="false" onAction="#deleteData" prefHeight="25.0" prefWidth="100.0" text="Delete">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Button>
+        <TextField fx:id="id" layoutX="85.0" layoutY="60.0" prefHeight="25.0" prefWidth="111.0" />
+        <Text layoutX="59.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" />
+        <TextField fx:id="name" layoutX="85.0" layoutY="95.0" prefHeight="25.0" prefWidth="111.0" />
+        <Text layoutX="39.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+        <TextField fx:id="quantity" layoutX="85.0" layoutY="130.0" prefHeight="25.0" prefWidth="111.0" />
+        <Text layoutX="25.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity:" />
+        <TextField fx:id="price" layoutX="85.0" layoutY="165.0" prefHeight="25.0" prefWidth="111.0" />
+        <Text layoutX="47.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price:" wrappingWidth="48.18163827061653" />
+        <Button fx:id="updateData" layoutX="100.0" layoutY="240.0" mnemonicParsing="false" onAction="#updateData" prefHeight="25.0" prefWidth="100.0" text="Update">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Button>
+        <Button fx:id="btnSignOut" layoutX="12.0" layoutY="380.0" mnemonicParsing="false" onMouseClicked="#signOutButtonAction" text="SIGN OUT">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Button>
+        <Button fx:id="btnBack" layoutX="13.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#backButtonAction" text="BACK">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Button>
+        <Label layoutX="41.0" layoutY="14.0" text="PRODUCT" textFill="#4400ff">
+            <font>
+                <Font name="System Bold" size="23.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
